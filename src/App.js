@@ -1,6 +1,7 @@
 import './App.css';
 import Hello from './component/Hello';
 import Welcome from './component/Welcome';
+import Status from './component/Status';
 import styles from './App.module.css'
 
 function App() {
@@ -18,11 +19,16 @@ function App() {
       hello, {name}.
     </h1>
     <a href={naver.url}>{naver.name}</a> */}
-    <Hello />
+    <Hello /> 
+    <Welcome />
     <div className={styles.box} >App</div>
+
+    <Status age={10}/>
+    <Status age={20}/>
+    <Status age={30}/>
     </div>
   );
 }
-
+ 
 export default App;
 
